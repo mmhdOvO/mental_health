@@ -1,0 +1,11 @@
+# config/config.yaml
+database:
+  dsn: "root:12345678@tcp(localhost:3306)/mental_health?charset=utf8mb4&parseTime=True&loc=Local"  # 数据库连接字符串（可替换为你的实际配置）
+
+server:
+  port: ":8080"  # 服务监听端口
+
+# 可选：JWT 配置（如果需要）
+jwt:
+  secret: "your-256-bit-secure-secret-key-1234567890abcdef"  # 长度≥32字符的安全密钥
+  expire_hours: 168  # 令牌有效期（7天，单位小时）
